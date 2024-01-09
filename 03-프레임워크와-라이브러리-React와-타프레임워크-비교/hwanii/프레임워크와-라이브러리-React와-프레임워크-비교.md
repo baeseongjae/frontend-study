@@ -1,19 +1,16 @@
+# 01.10 FE Study
+
 # 주제
 
 - 프레임워크와 라이브러리 차이는 무엇일까?
 - React와 타 프레임워크(Vue.js, Angular 등)와 비교해보기  → 이왕이면 사용해본 경험과 연관지어볼 것)
 - 그렇다면 React가 이 세상을 점령한 이유는 무엇일까? (장점 생각해보기)
 
-
-
 ---
 
-
-
 ## 프레임워크와 라이브러리의 차이는 무엇일까?
-    
 
-<img src="images/framework-vs-library.png" alt="fw vs lb" width="400" />
+![Untitled](01%2010%20FE%20Study%203ecf6ad35b154f4d813e5434890daee8/Untitled.png)
 
 ### 프레임워크란?
 
@@ -79,12 +76,11 @@
 
 ### 🤔 생각해보기
 
-### **그럼 우리가 API라고 부르는 것과 라이브러리는 같은 걸까요? (일일 퀴즈 아닙니다.)**
-        
-        정답은 ‘아니다’입니다~ 이 둘은 서로 연관되어 있지만 API는 소프트웨어 컴포넌트들이 상호 작용하는 방법을 정의한 규약이나 명세를 의미하고 라이브러리는 미리 작성된 코드 조각들의 모음입니다. 예시로 보면 이해하기 쉽습니다. 
-        
-        날씨 정보를 제공하는 외부 서비스가 있다고 할 때 이 서비스는 API를 제공하며, 사용자는 날씨 데이터를 요청하고 받을 수 있게 됩니다. 이 경우, API는 사용자가 애플리케이션과 외부 날씨 서비스 간의 상호작용을 가능하게 하는 인터페이스입니다.
-        
+### **그럼 우리가 API라고 부르는 것과 라이브러리는 같은 걸까요?**
+
+정답은 ‘아니다’입니다~ 이 둘은 서로 연관되어 있지만 API는 소프트웨어 컴포넌트들이 상호 작용하는 방법을 정의한 규약이나 명세를 의미하고 라이브러리는 미리 작성된 코드 조각들의 모음입니다. 예시로 보면 이해하기 쉽습니다. 
+
+날씨 정보를 제공하는 외부 서비스가 있다고 할 때 이 서비스는 API를 제공하며, 사용자는 날씨 데이터를 요청하고 받을 수 있게 됩니다. 이 경우, API는 사용자가 애플리케이션과 외부 날씨 서비스 간의 상호작용을 가능하게 하는 인터페이스입니다.
 
 ---
 
@@ -92,8 +88,7 @@
 
 ### 리액트와 Vue 비교하기
 
-
-<img src="images/vue-vs-react.jpeg" alt="vue vs react" width="400" />
+![Untitled](01%2010%20FE%20Study%203ecf6ad35b154f4d813e5434890daee8/Untitled%201.png)
 
 리액트와 뷰는 문법 및 구문 혹은 상태 관리 차이로 비교할 수 있습니다. 
 
@@ -138,7 +133,7 @@
 
 ### 리액트와 Angular 비교하기
 
-<img src="images/react-vs-angular.png" alt="react vs angular" width="400" />
+![Untitled](01%2010%20FE%20Study%203ecf6ad35b154f4d813e5434890daee8/Untitled%202.png)
 
 리액트와 앵귤러는 언어, 양방향 데이터 바인딩, 모듈성으로 비교할 수 있습니다.
 
@@ -176,7 +171,7 @@
 
 ### 리액트와 Svelte 비교하기
 
-<img src="images/React-vs-Svelte.jpg" alt="vue vs react" width="400" />
+![Untitled](01%2010%20FE%20Study%203ecf6ad35b154f4d813e5434890daee8/Untitled%203.png)
 
 **리액트와 스벨트는 컴파일 방식과 바인딩 방식으로 비교할 수 있습니다.**
 
@@ -266,14 +261,16 @@
 
 - 참고 블로그s
     
-    https://code-lab1.tistory.com/284
+    [https://code-lab1.tistory.com/284](https://code-lab1.tistory.com/284)
     
     [https://velog.io/@tjdud0123/API-vs-라이브러리-vs-프레임워크](https://velog.io/@tjdud0123/API-vs-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-vs-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)
     
     [https://velog.io/@leehaeun0/React-vs-Vue-장단점-비교](https://velog.io/@leehaeun0/React-vs-Vue-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EB%B9%84%EA%B5%90)
     
-    https://tech.kakaoenterprise.com/109
+    [https://tech.kakaoenterprise.com/109](https://tech.kakaoenterprise.com/109)
     
-    https://pagepro.co/blog/react-vs-svelte/ 
+    [https://pagepro.co/blog/react-vs-svelte/](https://pagepro.co/blog/react-vs-svelte/) 
+    
+    [https://www.simform.com/blog/react-vs-svelte/](https://www.simform.com/blog/react-vs-svelte/)
     
     [https://tech.osci.kr/react-깊이-파고들기/](https://tech.osci.kr/react-%ea%b9%8a%ec%9d%b4-%ed%8c%8c%ea%b3%a0%eb%93%a4%ea%b8%b0/)
