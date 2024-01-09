@@ -4,16 +4,16 @@
 - React와 타 프레임워크(Vue.js, Angular 등)와 비교해보기  → 이왕이면 사용해본 경험과 연관지어볼 것)
 - 그렇다면 React가 이 세상을 점령한 이유는 무엇일까? (장점 생각해보기)
 
+
+
 ---
 
+
+
 ## 프레임워크와 라이브러리의 차이는 무엇일까?
-
-- **스포주의!!!**
-    
-    # 프론트 스터디 화이팅!!!!!!!!!
     
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/68c14e03-6e41-48ee-9c12-ceae9d90c1e1/e175bfc3-b340-4754-b2bd-cf8618e151b7/Untitled.png)
+<img src="images/framework-vs-library" alt="fw vs lb" width="400" />
 
 ### 프레임워크란?
 
@@ -95,7 +95,8 @@
 
 ### 리액트와 Vue 비교하기
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/68c14e03-6e41-48ee-9c12-ceae9d90c1e1/82345e25-c232-44fa-ae05-260e6e495606/Untitled.png)
+
+<img src="images/vue-vs-react" alt="vue vs react" width="400" />
 
 리액트와 뷰는 문법 및 구문 혹은 상태 관리 차이로 비교할 수 있습니다. 
 
@@ -140,7 +141,7 @@
 
 ### 리액트와 Angular 비교하기
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/68c14e03-6e41-48ee-9c12-ceae9d90c1e1/e2547347-f455-4b25-9632-dc0998e202ad/Untitled.png)
+<img src="images/react-vs-angular" alt="react vs angular" width="400" />
 
 리액트와 앵귤러는 언어, 양방향 데이터 바인딩, 모듈성으로 비교할 수 있습니다.
 
@@ -178,7 +179,7 @@
 
 ### 리액트와 Svelte 비교하기
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/68c14e03-6e41-48ee-9c12-ceae9d90c1e1/932d02a2-3727-4c6f-a08b-fa4125022ce7/Untitled.png)
+<img src="images/React-vs-Svelte" alt="vue vs react" width="400" />
 
 **리액트와 스벨트는 컴파일 방식과 바인딩 방식으로 비교할 수 있습니다.**
 
