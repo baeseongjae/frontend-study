@@ -13,7 +13,7 @@
 ## 프레임워크와 라이브러리의 차이는 무엇일까?
     
 
-<img src="images/framework-vs-library" alt="fw vs lb" width="400" />
+<img src="images/framework-vs-library.png" alt="fw vs lb" width="400" />
 
 ### 프레임워크란?
 
@@ -80,9 +80,6 @@
 ### 🤔 생각해보기
 
 ### **그럼 우리가 API라고 부르는 것과 라이브러리는 같은 걸까요? (일일 퀴즈 아닙니다.)**
-
-- 🎉 **정답 보려면 누르세요** 🎉
-    - **순진하긴 ㅋ**
         
         정답은 ‘아니다’입니다~ 이 둘은 서로 연관되어 있지만 API는 소프트웨어 컴포넌트들이 상호 작용하는 방법을 정의한 규약이나 명세를 의미하고 라이브러리는 미리 작성된 코드 조각들의 모음입니다. 예시로 보면 이해하기 쉽습니다. 
         
@@ -96,7 +93,7 @@
 ### 리액트와 Vue 비교하기
 
 
-<img src="images/vue-vs-react" alt="vue vs react" width="400" />
+<img src="images/vue-vs-react.jpeg" alt="vue vs react" width="400" />
 
 리액트와 뷰는 문법 및 구문 혹은 상태 관리 차이로 비교할 수 있습니다. 
 
@@ -141,7 +138,7 @@
 
 ### 리액트와 Angular 비교하기
 
-<img src="images/react-vs-angular" alt="react vs angular" width="400" />
+<img src="images/react-vs-angular.png" alt="react vs angular" width="400" />
 
 리액트와 앵귤러는 언어, 양방향 데이터 바인딩, 모듈성으로 비교할 수 있습니다.
 
@@ -179,7 +176,7 @@
 
 ### 리액트와 Svelte 비교하기
 
-<img src="images/React-vs-Svelte" alt="vue vs react" width="400" />
+<img src="images/React-vs-Svelte.jpg" alt="vue vs react" width="400" />
 
 **리액트와 스벨트는 컴파일 방식과 바인딩 방식으로 비교할 수 있습니다.**
 
