@@ -88,7 +88,7 @@
 
 ### 리액트와 Vue 비교하기
 
-<img src="react-vs-vue" alt="react vs vue">
+<img src="react-vs-vue.png" alt="react vs vue">
 
 리액트와 뷰는 문법 및 구문 혹은 상태 관리 차이로 비교할 수 있습니다.
 
@@ -123,7 +123,7 @@
 
 ### 리액트와 Svelte 비교하기
 
-<img src="react-vs-svelte" alt="react vs svelte">
+<img src="react-vs-svelte.png" alt="react vs svelte">
 
 **리액트와 스벨트는 컴파일 방식과 바인딩 방식으로 비교할 수 있습니다.**
 
