@@ -1,40 +1,69 @@
-<script setup>
-import { ref } from 'vue'
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js App</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>튜토리얼Todo 리스트</h1>
 
-defineProps({
-  msg: String,
-})
+      <!-- ★STEP11 -->
+      <label v-for="label in options">
+        <input type="radio" v-model="current" v-bind:value="label.value" />{{
+          label.label
+        }}
+      </label>
 
-const count = ref(0)
-</script>
+      <!-- ★STEP12 -->
+      ({{ computedTodos.length }} 개의 결과 출력하기)
 
-<template>
-  <h1>{{ msg }}</h1>
+      <!-- ★STEP4 리스트 전용 테이블 -->
+      <table>
+        <thead v-pre>
+          <tr>
+            <th class="id">ID</th>
+            <th class="comment">내용</th>
+            <th class="state">상태</th>
+            <th class="button">-</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ★STEP5 ToDo 요소 반복 출력-->
+          <tr
+            v-for="item in computedTodos"
+            v-bind:key="item.id"
+            v-bind:class="{ done: item.state }"
+          >
+            <th>{{ item.id }}</th>
+            <td>{{ item.comment }}</td>
+            <td class="state">
+              <!-- ★STEP10 상태 변경 버튼 -->
+              <button v-on:click="doChangeState(item)">
+                {{ labels[item.state] }}
+              </button>
+            </td>
+            <td class="button">
+              <!-- ★STEP10 제거 버튼 -->
+              <button v-on:click.ctrl="doRemove(item)">제거</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>※ 제거 버튼은 컨트롤 키를 누르고 클릭하세요.</p>
 
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-  </div>
+      <!-- ★STEP6 -->
+      <h2>새로운 작업 추가</h2>
+      <form class="add-form" v-on:submit.prevent="doAdd">
+        <!-- 내용 입력 양식 -->
+        내용 <input type="text" ref="comment" />
+        <!-- 추가 버튼 목업 -->
+        <button type="submit">추가</button>
+      </form>
+    </div>
 
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
-</template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

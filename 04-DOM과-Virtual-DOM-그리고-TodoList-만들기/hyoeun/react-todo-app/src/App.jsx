@@ -19,8 +19,8 @@ function App() {
   const handleClickAddTodo = () => {
     if (inputValue !== "") {
       setTodoList((prev) => [
-        ...prev,
         { isComplete: false, value: inputValue },
+        ...prev,
       ]);
       setInputValue("");
     }
