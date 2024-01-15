@@ -8,25 +8,25 @@ DOM(Document Object Model, 문서 객체 모델) : HTML, XML 문서의 Programmi
 
 ### DOM tree
 
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+![Alt text](./images/image-1.png)
+![Alt text](./images/image-2.png)
 
 #### 자식 노드 탐색
 
 - 자식노드 : 일반적으로 중첩 관계에 있는 본인 바로 아래 노드
 - 후손노드 : 일반적으로 중첩 관계에 있는 본인 아래의 모든 노드
-  ![Alt text](image-3.png)
+  ![Alt text](./images/image-3.png)
 
 #### 부모 노드 탐색
 
 - 부모노드 : 일반적으로 바로 위에서 특정 노드를 감싸고 있는 노드
 - 조상노드 : 일반적으로 특정 노드를 감싸고 있는 모든 노드
 - 형제노드 : 일반적으로 특정 노드와 동등한 레벨에 있는 노드
-  ![Alt text](image-4.png)
+  ![Alt text](./images/image-4.png)
 
 #### DOM 객체 탐색
 
-![Alt text](image-5.png)
+![Alt text](./images/image-5.png)
 
 <hr>
 <br>
@@ -67,11 +67,11 @@ Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존�
 
 <br>
 
-![Alt text](image.png)
+![Alt text](./images/image.png)
 
 ### Virtual DOM 특징
 
-![Alt text](image-6.png)
+![Alt text](./images/image-6.png)
 
 - JavaScript 객체를 활용한다.
 - 메모리 상에서 동작하기에 훨씬 더 빠르게 동작한다.
@@ -82,11 +82,11 @@ Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존�
 
 ### Virtual DOM의 과정
 
-![Alt text](image-7.png)
+![Alt text](./images/image-7.png)
 1️⃣ 데이터가 업데이트 되었을 때, 전체 UI가 Virtual DOM에서 리랜더링 된다.
-![Alt text](image-8.png)
+![Alt text](./images/image-8.png)
 2️⃣ 이전 DOM과 새로운 Virtual DOM의 차이가 계산된다.
-![Alt text](image-9.png)
+![Alt text](./images/image-9.png)
 3️⃣ 계산이 끝난 후, DOM은 변경된 부분만을 변화시킨다.
 <Br>
 
@@ -102,7 +102,7 @@ Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존�
 ### Diff 알고리즘
 
 Virtual DOM이 업데이트되면, React는 Virtual DOM을 업데이트 이전의 Virtual DOM 스냅샷과 비교하여 정확히 어떤 Virtual DOM이 바뀌었는지 검사한다.
-![Alt text](image-10.png)
+![Alt text](./images/image-10.png)
 
 - 속성 값만 변한 경우 → 속성 값만 업데이트
 - 태그나 컴포넌트가 변경된 경우 → 해당 노드를 포함한 하위의 모든 노드들이 `언마운트` (제거한 뒤에 새로운 Virtual DOM으로 대체) <br>
@@ -126,12 +126,12 @@ Incremental DOM은 코드 변경점을 찾을 때 실제 DOM을 사용하여 Vir
 - 메모리를 효율적으로 사용하여, 휴대전화와 같이 메모리가 적은 장치에서 사용될 때 굉장히 좋다.
   <br>
   <br>
-  ![Alt text](image-12.png)
+  ![Alt text](./images/image-12.png)
   추가 및 변경되는 부분만 메모리 할당한다.
 
 ❗️Virtual DOM과 다르게, Incremental DOM은 애플리케이션 UI를 다시 렌더링할 때 실제 DOM을 복사해서 생성하지 않는다. 게다가 애플리케이션 UI에 변경이 없다면 메모리를 할당하지도 않는다. 대부분의 경우, 중요한 수정 사항 없이 애플리케이션을 다시 렌더링한다. 그래서 Incremental DOM의 접근 방식은 메모리 사용을 크게 줄여준다.
 
-![Alt text](image-11.png)
+![Alt text](./images/image-11.png)
 
 ```
 💡 Incremental DOM은 메모리의 효율성에서 훨씬 뛰어나지만, 속도면에서는 Virtual DOM 방식이 더 빠르다.

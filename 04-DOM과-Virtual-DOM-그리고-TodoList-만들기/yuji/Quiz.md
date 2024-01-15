@@ -5,7 +5,7 @@
  <br>
 <details>
 <summary>정답</summary>
-❌
+❌<br>
 정보 제공만 하는 웹 페이지라면, 아무런 인터렉션이 발생하지 않기 때문에 DOM tree의 변화가 발생하지 않아서, 일반 DOM의 성능이 더 좋을 수 있다
 </details>
 
