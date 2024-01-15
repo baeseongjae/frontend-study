@@ -31,7 +31,7 @@ const TodoWrapper = styled.div`
     padding: 5px 5px;
     user-select: none;
     cursor: pointer;
-    color: hsl(0, 0%, 60.78431372549019%);
+    color: #b7b7b7;
     &:hover {
       color: #ee4490;
     }

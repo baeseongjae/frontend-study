@@ -5,7 +5,7 @@ import TodoInsertInput from "./components/TodoInsert/TodoInsertInput";
 import TodoInsertButton from "./components/TodoInsert/TodoInsertButton";
 import AllDeleteButton from "./components/TodoInsert/AllDeleteButton";
 import TodoItemList from "./components/TodoList/TodoItemList";
-import RestTodo from "./components/RestTodo";
+import TodoFooter from "./components/TodoFooter";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -43,7 +43,7 @@ function App() {
         } else {
           return item;
         }
-      })
+      }),
     );
   };
 
@@ -70,7 +70,7 @@ function App() {
         />
       </InputContainer>
       <TodoItemList todoList={todoList} handleCheckTodo={handleCheckTodo} />
-      <RestTodo restTodo={restTodo} />
+      <TodoFooter restTodo={restTodo} />
     </TodoWrapper>
   );
 }
@@ -91,7 +91,7 @@ const TodoWrapper = styled.div`
   background: hsl(195, 24%, 6%);
   overflow-y: auto;
   scroll-behavior: smooth;
-  filter: drop-shadow(0 0 65px #e9ff21da);
+  filter: drop-shadow(0 0 30px #f1ff2fc5);
 `;
 
 const InputContainer = styled.div`
