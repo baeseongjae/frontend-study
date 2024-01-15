@@ -1,0 +1,38 @@
+.todoList {
+    text-align: start;
+    width: 100%;
+}
+
+.todoList .listTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.todoList .listTitle h4 {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #4361ee;
+    border-radius: 6px;
+    color: white;
+}
+
+.todoList .listTitle span {
+    padding: 5px 10px;
+    background-color: #4361ee;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.todoList .items{
+    height: 450px;
+    overflow: scroll;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
