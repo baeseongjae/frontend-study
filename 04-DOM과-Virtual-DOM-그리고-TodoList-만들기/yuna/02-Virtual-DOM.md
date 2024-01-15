@@ -690,6 +690,8 @@ function createFiberFromFragment(
 
 # Vue의 Virtual DOM 최적화
 
+![notion image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb53f7e23-b458-41b2-bd38-a8828ce45ad6%2Frender-pipeline.03805016.png?table=block&id=9e3ab3c5-eb13-4d39-901d-f76e7f8a839a&cache=v2)
+
 기존 Vue의 렌더링을 위한 virtual DOM 설계는 변경이 필요한 부분만 확인하는 것이 아닌 매번 전체 트리를 확인했기 때문에 비효율적이고 불필요한 탐색이 포함될 수밖에 없었음
 
 Vue는 이같이 불필요한 탐색을 제거하고 렌더링 성능을 향상시키고자 Vue.js 3.0에서 Virtual DOM 최적화 작업을 진행하였음
