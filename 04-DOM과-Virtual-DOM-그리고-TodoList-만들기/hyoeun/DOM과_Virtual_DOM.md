@@ -340,4 +340,4 @@ Diff 알고리즘은 비교할 가상 DOM 트리에 대해 어떠한 가정도 �
 > - [DOM vs Virtual DOM](https://velog.io/@ye-ji/DOM-vs-Virtual-DOM)
 > - [[Vue] Virtual DOM은 대체 무엇인가](https://uhjee.github.io/vue/what-is-virtual-dom/)
 > - [Vue : Virtual DOM과 Vue 렌더링 원리 알아보기](https://pinokio0702.tistory.com/363)
-> - [Vue 공식문서](https://vuejs.org/guide/extras/rendering-mechanism)
+> - [Vue 공식문서](https://vuejs.org/guide/extras/rendering-mechanism) > [Virtual DOM](https://jisop.github.io/TIL/React/react-virtual-dom/)
