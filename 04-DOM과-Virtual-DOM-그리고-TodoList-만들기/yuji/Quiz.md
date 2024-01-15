@@ -27,6 +27,7 @@ Virtual DOM과 다르게, Incremental DOM은 애플리케이션 UI를 다시 렌
 <details>
 <summary>정답</summary>
 🅾️
+<br>
 SPA는 초기에 애플리케이션의 전체 페이지를 로드하고 이후에는 필요한 데이터만 가져와서 동적으로 콘텐츠를 갱신하기 때문에, 클라이언트 측에서 더 많은 DOM 조작이 발생한다. → 가상돔 사용 고려
 
 </details>
