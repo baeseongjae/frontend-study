@@ -59,7 +59,7 @@ document.getElementById('some-id').innerValue = 'updated value';
 
 ## Virtual DOM
 
-Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존재하는 가상의 DOM을 의미한다.
+**Virtual** DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존재하는 가상의 DOM을 의미한다.
 
 - Virtual DOM은 DOM을 가볍게 만든 JavaScript 표현이며, 실제로 스크린에 랜더링하는 것이 아니기 때문에 DOM을 직접 업데이트하는 것보다 상대적으로 빠르다.
 
@@ -84,8 +84,12 @@ Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존�
 
 ![Alt text](./images/image-7.png)
 1️⃣ 데이터가 업데이트 되었을 때, 전체 UI가 Virtual DOM에서 리랜더링 된다.
+<br>
+
 ![Alt text](./images/image-8.png)
 2️⃣ 이전 DOM과 새로운 Virtual DOM의 차이가 계산된다.
+<br>
+
 ![Alt text](./images/image-9.png)
 3️⃣ 계산이 끝난 후, DOM은 변경된 부분만을 변화시킨다.
 <Br>
@@ -102,6 +106,8 @@ Virtual DOM은 실제 DOM을 모방하는 형태로 메모리 상에서만 존�
 ### Diff 알고리즘
 
 Virtual DOM이 업데이트되면, React는 Virtual DOM을 업데이트 이전의 Virtual DOM 스냅샷과 비교하여 정확히 어떤 Virtual DOM이 바뀌었는지 검사한다.
+<br>
+
 ![Alt text](./images/image-10.png)
 
 - 속성 값만 변한 경우 → 속성 값만 업데이트
@@ -112,6 +118,9 @@ Virtual DOM이 업데이트되면, React는 Virtual DOM을 업데이트 이전�
 
 👉🏻 아니다!
 <br>interaction이 발생하지 않는 페이지 (정보제공)라면, DOM tree의 변화가 발생하지 않아서 일반 DOM의 성능이 더 좋을 수 있다!
+
+<br>
+<br>
 
 # 타 프레임워크는 어떻게 운영할까?
 
@@ -129,7 +138,7 @@ Incremental DOM은 코드 변경점을 찾을 때 실제 DOM을 사용하여 Vir
   ![Alt text](./images/image-12.png)
   추가 및 변경되는 부분만 메모리 할당한다.
 
-❗️Virtual DOM과 다르게, Incremental DOM은 애플리케이션 UI를 다시 렌더링할 때 실제 DOM을 복사해서 생성하지 않는다. 게다가 애플리케이션 UI에 변경이 없다면 메모리를 할당하지도 않는다. 대부분의 경우, 중요한 수정 사항 없이 애플리케이션을 다시 렌더링한다. 그래서 Incremental DOM의 접근 방식은 메모리 사용을 크게 줄여준다.
+❗️ Virtual DOM과 다르게, Incremental DOM은 애플리케이션 UI를 다시 렌더링할 때 실제 DOM을 복사해서 생성하지 않는다. 게다가 애플리케이션 UI에 변경이 없다면 메모리를 할당하지도 않는다. 대부분의 경우, 중요한 수정 사항 없이 애플리케이션을 다시 렌더링한다. 그래서 Incremental DOM의 접근 방식은 메모리 사용을 크게 줄여준다.
 
 ![Alt text](./images/image-11.png)
 
@@ -141,7 +150,16 @@ Incremental DOM은 코드 변경점을 찾을 때 실제 DOM을 사용하여 Vir
 
 어플리케이션은 반드시 모바일 기기에서 문제 없이 작동해야 한다. 즉 , 어플리케이션 번들의 용량(Tree shaking)과 `메모리 점유율에 대한 최적화`를 위한 선택이다.
 
-<hr>
+<br>
+
+## Svelte의 DOM
+
+Svelte는 컴파일러에 차이가 있다.
+Svelte는 그 과정을 사이트가 배포되기 전에 미리 다 해두도록 한 것이다. Svelte 형식에 맞게 코드를 작성하고 빌드하면 Svelte는 사이트에서 실제로 일어날 일들, 어떤 이벤트가 들어오면 어떤 변화가 일어날지들을 컴팩한 자바스크립트 파일로 컴파일해서 내놓기 때문에 용량 면에서도 더 가볍고 DOM의 조작도 더 빠르다고 한다.
+
+❗️ 코드를 미리 컴파일해서 내보내야 하기 때문에 특정 형태의 사이트에서는 한계가 될 수 있다.
+
+<br>
 
 ## 결론
 
