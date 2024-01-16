@@ -16,6 +16,7 @@ const TodoPage = () => {
       id: idRef.current++,
       text: input,
       date: Date.now(),
+      isDone: false,
     };
     setTodos([...todos, newTodo]);
   };
@@ -62,7 +63,7 @@ const TodoPage = () => {
     <>
       <Header />
       <TodoForm onAddTodo={addTodo} />
-      <TodoList />
+      <TodoList todos={todos} />
       {/* <div>
         <button onClick={() => setFilter("all")}>전체</button>
         <button onClick={() => setFilter("incompleted")}>미완료</button>
