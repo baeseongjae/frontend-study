@@ -19,6 +19,13 @@ const TodoList = () => {
     setInput("");
   };
 
+  const toggleTodo = (index) => {
+    const updatedTodos = todos.map((todo) =>
+      todo.id === index ? { ...todo, completed: !todo.completed } : todo
+    );
+    setTodos(updatedTodos);
+  };
+
   return (
     <>
       <h1>To Do List</h1>
@@ -34,7 +41,13 @@ const TodoList = () => {
       {/* 할일 목록 렌더링 */}
       <ul>
         {todos.map((item) => (
-          <li key={item.id}>{item.text}</li>
+          <li
+            key={item.id}
+            style={{ textDecoration: item.completed ? "line-through" : "none" }}
+          >
+            {item.text}
+            <button onClick={() => toggleTodo(item.id)}>check</button>
+          </li>
         ))}
       </ul>
     </>
