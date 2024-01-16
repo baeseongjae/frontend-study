@@ -41,9 +41,23 @@ const TodoList = () => {
     }
   });
 
-  // 검색 기능
+  // 4. 할일 검색 기능
   const searchedTodos = () => {
     return filteredTodos.filter((todo) => todo.text.includes(keyword));
+  };
+
+  // 5. 할일 삭제 기능
+  const deleteTodo = (id) => {
+    // 타겟 인덱스 찾기
+    const index = todos.findIndex((todo) => todo.id === id);
+    if (index !== -1) {
+      // 복사본 만들기
+      const updatedTodos = [...todos];
+      // 자르기
+      updatedTodos.splice(index, 1);
+      // 원본배열에 업데이트하기
+      setTodos(updatedTodos);
+    }
   };
 
   return (
@@ -79,6 +93,7 @@ const TodoList = () => {
           >
             {item.text}
             <button onClick={() => toggleTodo(item.id)}>check</button>
+            <button onClick={() => deleteTodo(item.id)}>❌</button>
           </li>
         ))}
       </ul>
