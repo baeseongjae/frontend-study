@@ -1,25 +1,19 @@
 import { useState } from "react";
 
+import TodoForm from "../components/TodoForm";
+
 const TodoList = () => {
-  const [input, setInput] = useState("");
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("all");
   const [keyword, setKeyword] = useState("");
 
   // 1. 할일 추가 로직 함수
-  const addTodo = (e) => {
-    if (input.trim() === "") {
-      alert("다시 입력하세요");
-      return;
-    }
+  const addTodo = (input) => {
     const newTodo = {
       id: Date.now(),
       text: input,
     };
-
-    e.preventDefault();
     setTodos([...todos, newTodo]);
-    setInput("");
   };
 
   // 2. 진행상태 토글 로직
@@ -62,15 +56,7 @@ const TodoList = () => {
 
   return (
     <>
-      <form onSubmit={addTodo}>
-        <input
-          value={input}
-          type="text"
-          placeholder="할일을 입력하세요"
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <button>추가</button>
-      </form>
+      <TodoForm onAddTodo={addTodo} />
       <div>
         <button onClick={() => setFilter("all")}>전체</button>
         <button onClick={() => setFilter("incompleted")}>미완료</button>
