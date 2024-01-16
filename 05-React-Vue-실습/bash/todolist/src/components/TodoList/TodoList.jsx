@@ -33,9 +33,9 @@ const TodoList = () => {
   // 3. filter 상태변수에 따라 할일 필터링 진행
   const filteredTodos = todos.filter((todo) => {
     if (filter === "completed") {
-      return !todo.completed;
-    } else if (filter === "incompleted") {
       return todo.completed;
+    } else if (filter === "incompleted") {
+      return !todo.completed;
     } else {
       return true;
     }
