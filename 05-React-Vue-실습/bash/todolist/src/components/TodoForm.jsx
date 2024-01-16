@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 
+import classes from "./TodoForm.module.css";
+
 const TodoForm = ({ onAddTodo }) => {
   const [input, setInput] = useState("");
   const inputRef = useRef();
@@ -19,7 +21,7 @@ const TodoForm = ({ onAddTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={classes.TodoForm} onSubmit={handleSubmit}>
       <input
         ref={inputRef}
         value={input}

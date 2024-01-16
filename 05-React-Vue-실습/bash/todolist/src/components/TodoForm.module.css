@@ -1,0 +1,29 @@
+.TodoForm {
+  display: flex;
+  gap: 10px;
+}
+
+.TodoForm input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.TodoForm input:focus {
+  outline: none;
+  border-color: #5538ee;
+}
+
+.TodoForm button {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6b4eff;
+  color: #fff;
+}
+
+.TodoForm button:hover {
+  background-color: #5538ee;
+}

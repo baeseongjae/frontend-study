@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
 
-import TodoForm from "../components/TodoForm";
 import Header from "../components/Header";
+import TodoForm from "../components/TodoForm";
+import TodoList from "../components/TodoList";
 
 const TodoPage = () => {
   const [todos, setTodos] = useState([]);
@@ -61,7 +62,8 @@ const TodoPage = () => {
     <>
       <Header />
       <TodoForm onAddTodo={addTodo} />
-      <div>
+      <TodoList />
+      {/* <div>
         <button onClick={() => setFilter("all")}>전체</button>
         <button onClick={() => setFilter("incompleted")}>미완료</button>
         <button onClick={() => setFilter("completed")}>완료</button>
@@ -71,10 +73,10 @@ const TodoPage = () => {
         type="text"
         placeholder="검색하고 싶은 할일을 입력하세요"
         onChange={(e) => setKeyword(e.target.value)}
-      />
+      /> */}
 
       {/* 할일 목록 렌더링 */}
-      <ul>
+      {/* <ul>
         {searchedTodos().map((item) => (
           <li
             key={item.id}
@@ -85,7 +87,7 @@ const TodoPage = () => {
             <button onClick={() => deleteTodo(item.id)}>❌</button>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </>
   );
 };
