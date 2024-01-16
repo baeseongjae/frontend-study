@@ -3,7 +3,7 @@ import { useState } from "react";
 import classes from "./TodoList.module.css";
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, onUpdate }) => {
   const [search, setSearch] = useState("");
 
   const handleChangeSearch = (e) => {
@@ -31,7 +31,7 @@ const TodoList = ({ todos }) => {
       />
       <ul>
         {searchTodos().map((todo) => (
-          <TodoItem key={todo.id} {...todo} />
+          <TodoItem key={todo.id} onToggleTodo={onUpdate} {...todo} />
         ))}
       </ul>
     </div>

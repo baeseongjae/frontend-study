@@ -7,7 +7,6 @@ import TodoList from "../components/TodoList";
 const TodoPage = () => {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("all");
-  const [keyword, setKeyword] = useState("");
   const idRef = useRef(1);
 
   // 1. 할일 추가 로직 함수
@@ -24,7 +23,7 @@ const TodoPage = () => {
   // 2. 진행상태 토글 로직
   const toggleTodo = (index) => {
     const updatedTodos = todos.map((todo) =>
-      todo.id === index ? { ...todo, completed: !todo.completed } : todo
+      todo.id === index ? { ...todo, isDone: !todo.isDone } : todo
     );
     setTodos(updatedTodos);
   };
@@ -39,11 +38,6 @@ const TodoPage = () => {
       return true;
     }
   });
-
-  // 4. 할일 검색 기능
-  const searchedTodos = () => {
-    return filteredTodos.filter((todo) => todo.text.includes(keyword));
-  };
 
   // 5. 할일 삭제 기능
   const deleteTodo = (id) => {
@@ -63,7 +57,7 @@ const TodoPage = () => {
     <>
       <Header />
       <TodoForm onAddTodo={addTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} onUpdate={toggleTodo} />
       {/* <div>
         <button onClick={() => setFilter("all")}>전체</button>
         <button onClick={() => setFilter("incompleted")}>미완료</button>

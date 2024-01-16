@@ -14,6 +14,11 @@
 
 .TodoItem .text {
   flex: 1;
+  color: white;
+}
+
+.TodoItem .text.done {
+  text-decoration: line-through;
 }
 
 .TodoItem .date {
