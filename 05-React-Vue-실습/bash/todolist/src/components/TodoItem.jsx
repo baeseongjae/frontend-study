@@ -1,4 +1,5 @@
 import classes from "./TodoItem.module.css";
+import { FaTrashAlt } from "react-icons/fa";
 
 const TodoItem = ({ id, text, date, isDone, onToggleTodo, onDeleteTodo }) => {
   const handleToggleDone = () => {
@@ -24,7 +25,9 @@ const TodoItem = ({ id, text, date, isDone, onToggleTodo, onDeleteTodo }) => {
         <div className={classes.date}>
           {new Date(date).toLocaleDateString()}
         </div>
-        <button onClick={handleDeleteTodo}>❌</button>
+        <button onClick={handleDeleteTodo}>
+          <FaTrashAlt className={classes.trash} />
+        </button>
       </li>
     </>
   );

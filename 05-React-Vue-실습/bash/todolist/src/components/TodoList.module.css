@@ -28,7 +28,7 @@
 .TodoList input[type="radio"] {
   width: 32px;
   height: 32px;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .TodoList ul {

@@ -86,7 +86,6 @@ const TodoList = ({ todos, onUpdate, onDelete }) => {
           <label htmlFor="filter-incompleted">Incompleted</label>
         </li>
       </ul>
-      <div></div>
       <ul>
         {searchTodos().map((todo) => (
           <TodoItem
