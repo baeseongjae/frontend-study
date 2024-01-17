@@ -46,31 +46,6 @@ const TodoPage = () => {
       <Header />
       <TodoForm onAddTodo={addTodo} />
       <TodoList todos={todos} onUpdate={toggleTodo} onDelete={deleteTodo} />
-      {/* <div>
-        <button onClick={() => setFilter("all")}>전체</button>
-        <button onClick={() => setFilter("incompleted")}>미완료</button>
-        <button onClick={() => setFilter("completed")}>완료</button>
-      </div>
-      <input
-        value={keyword}
-        type="text"
-        placeholder="검색하고 싶은 할일을 입력하세요"
-        onChange={(e) => setKeyword(e.target.value)}
-      /> */}
-
-      {/* 할일 목록 렌더링 */}
-      {/* <ul>
-        {searchedTodos().map((item) => (
-          <li
-            key={item.id}
-            style={{ textDecoration: item.completed ? "line-through" : "none" }}
-          >
-            {item.text}
-            <button onClick={() => toggleTodo(item.id)}>check</button>
-            <button onClick={() => deleteTodo(item.id)}>❌</button>
-          </li>
-        ))}
-      </ul> */}
     </>
   );
 };
