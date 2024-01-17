@@ -13,6 +13,24 @@
   border-bottom: 1px solid #5538ee;
 }
 
+.TodoList .radioWrapper {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
+.TodoList .radioWrapper li {
+  display: flex;
+  align-items: center;
+}
+
+.TodoList input[type="radio"] {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+}
+
 .TodoList ul {
   padding: 0;
   margin: 0;

@@ -8,13 +8,27 @@
   padding: 20px 0;
 }
 
-.TodoItem input {
-  width: 20px;
+.TodoItem > input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 12px;
+}
+
+.TodoItem > input[type="checkbox"]:checked {
+  border: 1px solid #5538ee;
+  background: #6b4eff;
 }
 
 .TodoItem .text {
   flex: 1;
   color: white;
+  font-size: 1.6rem;
 }
 
 .TodoItem .text.done {
