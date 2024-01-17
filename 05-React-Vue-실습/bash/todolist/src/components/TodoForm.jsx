@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 
 import classes from "./TodoForm.module.css";
+import { FaPlus } from "react-icons/fa";
 
 const TodoForm = ({ onAddTodo }) => {
   const [input, setInput] = useState("");
@@ -29,7 +30,9 @@ const TodoForm = ({ onAddTodo }) => {
         placeholder="할일을 입력하세요"
         onChange={handleChangeInput}
       />
-      <button>추가</button>
+      <button>
+        <FaPlus className={classes.plusIcon} />
+      </button>
     </form>
   );
 };

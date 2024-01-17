@@ -17,7 +17,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   justify-content: flex-end;
 }
 .TodoList .radioWrapper li {
@@ -26,9 +26,24 @@
 }
 
 .TodoList input[type="radio"] {
+  appearance: none;
   width: 32px;
   height: 32px;
-  margin-left: 5px;
+  margin-right: 8px;
+  border: 1px solid rgb(206, 205, 205);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.TodoList input[type="radio"]:focus {
+  outline: none;
+  border-color: #5538ee;
+}
+
+.TodoList input[type="radio"]:checked {
+  background-color: #6b4eff;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1.6px #6b4eff;
 }
 
 .TodoList ul {
