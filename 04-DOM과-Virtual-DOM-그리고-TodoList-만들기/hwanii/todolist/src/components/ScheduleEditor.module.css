@@ -1,0 +1,50 @@
+.editor {
+    border-bottom: 1px solid beige;
+    /*margin-top: 50px;*/
+    width: 100%;
+}
+
+.editor h1 {
+    margin: 20px 0 30px;
+    color: whitesmoke;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content .titleInput {
+    flex: 1;
+}
+
+.content input {
+    width: 100%;
+    box-sizing: border-box; /* input 의 외곽선 너비가 입력칸 너비에 포함되기 때문*/
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+    background: rgba( 255, 255, 255, 0.8 );
+    color: black;
+    font-size: 1rem;
+}
+
+
+.content button {
+    padding: 10px 15px;
+    border: 1px solid #4361ee;
+    border-radius: 6px;
+    margin-left: 10px;
+    background-color: #4361ee;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+}
+
+.content button:hover {
+    background-color: #535bf2;
+}

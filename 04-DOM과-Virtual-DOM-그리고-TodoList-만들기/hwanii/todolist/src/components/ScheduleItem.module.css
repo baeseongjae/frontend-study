@@ -1,0 +1,86 @@
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.8 );
+    /*box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #5465ff;
+    margin-bottom: 10px;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 60px;
+}
+
+.todoItem .complete button {
+    border: 1px solid #747bff;
+    background-color: #747bff;
+    font-size: 1.25rem;
+    color: white;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+}
+
+.todoItem .complete button:active {
+    background-color: #4361ee;
+    rotate: 45deg;
+    /*image*/
+}
+
+.todoItem .title {
+    flex: 1;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.todoItem .title input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 180px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    background: rgba( 255, 255, 255, 0.8 );
+    color: black;
+    font-size: 1rem;
+}
+
+.todoItem span {
+    transition: 0.5s ease-in;
+}
+
+.todoItem .date {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.todoItem .control {
+    margin-left: 10px;
+}
+
+.todoItem .control button {
+    border: 1px solid #747bff;
+    background-color: #747bff;
+    font-size: 1.25rem;
+    color: white;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 25%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.25s ease-out;
+}
+
+.todoItem .control .remove:hover {
+    border-color: red;
+    background-color: red;
+}
