@@ -23,7 +23,8 @@
 | study_01 | 01-03 |               브라우저 동작 원리와 렌더링 과정               | <p align=left> 1️⃣ 브라우저 동작 원리<br> 2️⃣ 브라우저 렌더링 과정<br/> ➕ DOM과 Virtual DOM<br/>➕ 브라우저 렌더링 과정과 리액트 렌더링 과정의 차이점</p> |
 | study_02 | 01-08 |          이벤트 루프와 자바스크립트 엔진 작동 원리           | <p align=left> 1️⃣ 자바스크립트 이벤트 루프와 비동기  처리<br> 2️⃣ 자바스크립트 엔진 (V8) 작동 원리<br>➕ 자바스크립트가 싱글 스레드로 만들어진 이유<br/></p> |
 | study_03 | 01-10 | 프레임워크와 라이브러리 차이와 React와 타 프레임워크 (라이브러리) 비교 | <p align=left> 1️⃣ 프레임워크와 라이브러리 차이<br/> 2️⃣ React와 타 프레임워크(Vue.js, Angular 등)와 비교<br/>3️⃣ React 장점과 궁극적인 사용 이유<br/></p> |
-| study_04 | 01-15 |       React와 타 프레임워크 DOM 운영 방식 비교 및 실습       | <p align=left> 1️⃣ DOM과 Virtual DOM, 타 프레임워크 DOM 조작 방식 비교<br/> 2️⃣ React와 Vue로 TodoList 직접 만들어 비교해보기<br/></p> |
+| study_04 | 01-15 |           React와 타 프레임워크 DOM 운영 방식 비교           | <p align=left> 1️⃣ DOM과 Virtual DOM, 타 프레임워크 DOM 조작 방식 비교<br/></p> |
+| study_05 | 01-17 |                React와 Vue 직접 비교하기 실습                | <p align=left> 1️⃣ React와 Vue로 TodoList 직접 만들어 비교해보기<br/> 2️⃣ JS와 JSX<br/></p> |
 
 
 
