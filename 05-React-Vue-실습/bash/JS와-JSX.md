@@ -6,7 +6,7 @@
 ## JSX 구성
 
 1. JSXElement
-   -> JSX를 구성하는 기본 요소이다. HTML의 Element와 비슷한 역할을 한다.
+   -> JSX를 구성하는 기본 요소g이다. HTML의 Element와 비슷한 역할을 한다.
 
 - JSXOpeningElement
 - JSXClosingElement

@@ -12,11 +12,11 @@ const TodoForm = ({ onAddTodo }) => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (input === "") {
       inputRef.current.focus();
       return;
     }
-    e.preventDefault();
     onAddTodo(input);
     setInput("");
   };
